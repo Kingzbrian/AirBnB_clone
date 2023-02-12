@@ -242,6 +242,7 @@ class HBNBCommand(cmd.Cmd):
             eval(HBNBCommand.name_dotcommand[cmd_line] + "({})"
                  .format("'BaseModel', " + cmd_args))
 
+
 if __name__ == '__main__':
     console = HBNBCommand()
     console.cmdloop()
