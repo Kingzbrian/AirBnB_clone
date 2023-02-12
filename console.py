@@ -4,6 +4,7 @@
 '''
 import cmd
 import json
+import uuid
 import shlex
 from models.engine.file_storage import FileStorage
 from models.base_model import BaseModel
@@ -26,6 +27,7 @@ class HBNBCommand(cmd.Cmd):
         '''
             Exits after receiving the EOF signal.
         '''
+        print()
         return True
 
     def do_create(self, args):
