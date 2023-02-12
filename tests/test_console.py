@@ -26,8 +26,6 @@ class TestMyCLI(unittest.TestCase):
         """ final statement """
         try:
             os.remove("file.json")
-        except:
-            pass
 
     def setUp(self):
         self.mock_stdin = create_autospec(sys.stdin)

@@ -33,8 +33,6 @@ class TestBase(unittest.TestCase):
         del cls.ins
         try:
             os.remove("file.json")
-        except:
-            pass
 
     def test_FileStorage_methods(self):
         """ test base model documentation
@@ -77,6 +75,7 @@ class TestBase(unittest.TestCase):
         dummy = BaseModel()
         l2 = len(storage.all())
         self.assertEqual(l1, l2 - 1)
+
 
 if __name__ == '__main__':
     unittest.main()

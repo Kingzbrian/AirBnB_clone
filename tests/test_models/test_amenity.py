@@ -31,8 +31,6 @@ class TestBase(unittest.TestCase):
         del cls.ins
         try:
             os.remove("file.json")
-        except:
-            pass
 
     def test_Userdoc(self):
         """ test base model documentation
@@ -48,6 +46,7 @@ class TestBase(unittest.TestCase):
 
     def test_isinstance(self):
         self.assertTrue(isinstance(self.ins, Amenity))
+
 
 if __name__ == '__main__':
     unittest.main()

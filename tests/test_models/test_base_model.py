@@ -33,8 +33,6 @@ class TestBase(unittest.TestCase):
         del cls.ins
         try:
             os.remove("file.json")
-        except:
-            pass
 
     def test_BaseModeldoc(self):
         """ test base model documentation
@@ -87,6 +85,7 @@ class TestBase(unittest.TestCase):
         storage.reload()
         my_dict = storage.all()
         self.assertTrue(len(my_dict) != 0)
+
 
 if __name__ == '__main__':
     unittest.main()
