@@ -14,6 +14,7 @@ section.filters {
   height: 48px;
   display: flex;
   justify-content: center;
+  align-items: center;
   right: 30px;
   top: 11px;
   width: 20%;
